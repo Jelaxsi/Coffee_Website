@@ -1,2 +1,13 @@
 # Coffee_Website
-This is a basic coffee website created using HTML,CSS and JAVA 
+An E-commerce website for coffee lovers
+# About this website
+COFFEE DAY is a fully responsive, user friendly website .
+# Features
+✅ Responsive and mobile-friendly design
+✅ Online Order availability
+✅ Interactive gallery 
+#Build with
+*HTML5 
+*CSS
+*JavaScript 
+
