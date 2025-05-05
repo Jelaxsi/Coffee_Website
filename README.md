@@ -8,20 +8,21 @@ COFFEE DAY is a fully responsive, user friendly website .
 ✅ Interactive gallery 
 
 #DESIGN CHOICES
-*Color scheme
+*Color scheme*:-
+
 - Primary colors : chocolate  color and shades of  white and Dark brown.
 	Oranged color: This color represents coffee and gives the website a warm,inviting feel.
 	White : A soft,neutral tone that ensures the content is easy to read and complements the chocolate color
 	Dark Brown: used for accents and interactive elements like buttons.
 
- *Layout
+ *Layout*:-
 	Header and Navigation Menu : A fixed header with a responsive navigation menu that becomes a sidebar on mobile devices.
 	About Us section : Detailed information about the coffee shop,including its missionand story
 	Menu Section : A lisit of popular coffee items with descriptions and pricing.
 	Contact Section : Customer details and Payment ,Our contact details.
 	Footer : Contact details,social media links and opening hours.
 
-*Design principles
+*Design principles*:-
 The design is simple yet visually focusing on usability and user  experience. It is responsive,ensuring a smooth browsing experience across devices.The layout provides a clear information hierarchy,helping users easily navigate through the sections.
 
 
