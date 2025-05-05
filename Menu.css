@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.ff-secondary {
+    font-family: 'Pacifico', cursive;
+}
+
+.fw-medium {
+    font-weight: 600 ;
+}
+
+.fw-semi-bold {
+    font-weight: 700 ;
+}
+
+header{
+    background-color: #070707;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+   
+}
+header .navbar{
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    position: sticky;
+}
+.navbar .logo {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: orangered;
+
+
+}
+.navbar .menu.menu.links{
+    display: flex;
+    gap: 30px;
+}
+.navbar .logo span{
+    color: rgb(230, 79, 14);
+}
+.navbar a {
+    color: rgb(255, 245, 240);
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+.navbar a:hover{
+    color: chocolate;
+}
+
+.navbar.fixed-top {
+    transition: .5s;
+}
+
+.hero-section {
+    background: url("Images/index.jpg") center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+        
+}
+
+.hero-section .content{
+    color: orangered;
+}
+.hero-section .content h1 {
+    font-size: 3rem;
+    max-width: 600px;
+}
+.hero-section .content p {
+    font-style: 300;
+    margin-top: 10px;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.oder-button{
+    background: rgb(128, 128, 125);
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 20px;
+    padding: 12px 30px;
+    border: radius 6px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    
+}
+.oder-button:hover{
+    color: beige;
+    background-color: rgb(68, 29, 1);
+}
+#menu-btn{
+    color: #fff;
+    cursor: pointer;
+    display:none;
+}
+#close-menu-btn{
+    position:absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    display: none;
+}
+    @media screen and (max-width:900px) {
+       
+        header{
+            padding: 10px 20px;
+        }
+        header.show-mobile-menu::before{
+            content: "";
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(5px);
+        }
+        #close-menu-btn, #menu-btn {
+            display: block;
+        }
+        .navbar .menu.links {
+            position: fixed;
+            left: -260px;
+            top: 0;
+            width: 200px;
+            height: 100vh;
+            background: #f5a08de7;
+            flex-direction: column;
+            padding: 70px 40px 0;
+            transition: left 0.15s ease;
+           
+
+        }
+        header.show-mobile-menu .navbar .menu.links{
+            left: 0;
+        }
+        .navbar a{
+            color: black;
+        }
+        .hero-section .content{
+            text-align: center;
+        }
+        .hero-section .content :is(h1,p){
+            max-width: 100%;
+        }
+        .hero-section .content h1{
+            font-size: 2.3rem;
+            line-height: 60px;
+        }
+        .hero-section .content button{
+            padding: 9px 18px;
+        }
+    }
+    
+
+
+
+/*Menu section*/
+
+#menu {
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    padding: 100px 20px;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #181818;
+       
+    
+}
+#menu h1 {
+    font-size: 4rem;
+    color:orangered;
+    margin-bottom: 20px;
+}
+
+#menu h2 {
+    font-size: 2rem;
+    color: #e66012;
+    margin-bottom: 20px;
+}
+
+/* Grid layout for menu */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+    color: #b86017;
+}
+
+.menu-item {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.menu-item img:hover {
+    transform: scale(1.1);
+}
+
+.menu-item h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.menu-item p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.button {
+    background-color: #e55b00;
+    color: white;
+    border: none;
+    padding: 10px ;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #c44a00;
+}
+
+.service-box, .menu-item {
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+ /* General Footer Styling */
+ footer {
+    background-color: #020202; 
+    color: rgb(255, 253, 251); 
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    
+  }
+  
+  /* Container styling */
+  footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  
+  /* Section Titles */
+  footer h2.section-title {
+    color:chocolate; /* Primary accent color */
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  /* Links Styling */
+  footer a.btn-link {
+    display: flex;
+    flex-wrap: wrap;
+    color: #e3e1df; /* Default link color */
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+    align-items: center;
+  }
+  
+  footer a.btn-link:hover {
+    color: #d46127e7; /* Hover color */
+    text-decoration: underline;
+  }
+  
+  /* Contact Info Styling */
+  footer p, footer h2 {
+    font-size: 1rem;
+    margin: 5px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+  }
+  
+  footer p i {
+    margin-right: 8px;
+    color: #dc7b26;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  /* Social Media Icons */
+  footer a.btn-outline-light {
+    display: inline-block;
+    margin: 5px 5px;
+    padding: 10px;
+    border: 1px solid #f8f9fa;
+    border-radius: 50%;
+    color: #f8f9fa;
+    transition: all 0.3s;
+    align-items: center;
+  }
+  
+  footer a.btn-outline-light:hover {
+    background-color: #cb530d;
+    border-color: #b86017;
+    color: #fff;
+  }
+  
+  /* Opening Hours */
+  footer h3.text-light {
+    font-size: 1.2rem;
+    color: #f8f9fa;
+  }
+
+  /*photo Gallery*/
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr); 
+   
+  }
+  .photo img {
+    width: 100%; 
+    height: auto;
+  }
+  
+.photo img {
+    width: 50%;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    align-items:justify ;
+}
+.photo img:hover {
+    transform: scale(1.1);
+}
+ 
+
+  
+  /* Copyright Section */
+  footer .copyright {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #f8f9fa;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  footer .copyright a {
+    color: #c86213;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  footer .copyright a:hover {
+    text-decoration: underline;
+  }

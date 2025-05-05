@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" type="text/css" href="oder.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/> 
+
+    
+</head>
+<body>
+
+<header>
+    <h1>Order Your Coffee</h1>
+</header>
+
+<div class="container">
+    <h2>Place Your Order</h2>
+    <form id="survey-form"> 
+        <!-- Coffee Type -->
+        <label for="coffeeType">Coffee Type:</label>
+        <select id="coffeeType" name="coffeeType" required>
+            <option value="espresso">Espresso</option>
+            <option value="latte">Latte</option>
+            <option value="cappuccino">Cappuccino</option>
+            <option value="americano">Americano</option>
+            <option value="mocha">Mocha</option>
+            <option value="cold brew">cold Brew</option>
+            <option value="Ristretto">Ristretto</option>
+            <option value="Macchiato">Macchiato</option>
+            <option value="olden Milk Latte">Golden Milk Latte</option>
+            <option value="Iced Macchiato">Iced Macchiato</option>
+            <option value="Cafe cubano">Cafe cubano</option>
+            <option value="Frappe">Frappe</option>
+        </select>
+        
+        <!-- Size -->
+        <label for="size">Size:</label>
+        <select id="size" name="size" required>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select>
+        
+        
+        <!-- Quantity -->
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+
+        <!-- Contact Information -->
+        <h3>Contact Information</h3>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="address">Delivery Address:</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+    </form>
+        <!-- Submit Button -->
+        <a href="Thank you.html">
+  
+            <input type="submit" id="submit" name="submit" value="place oder" >
+        
+        </a> 
+   
+</div>
+
+<footer>
+    <p>A Good Day Starts With a Great Cup of Coffee</p>
+</footer>
+
+</body>
+</html>
